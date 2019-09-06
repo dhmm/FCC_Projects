@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Save animals</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>        
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">Do you want to save animals ?</h1>
+            <p id="description">Dear saver !!! Help us to save animals. Complete this survery and register our group. We will do many things to save beautiful animals.</p>
+        </header>
+        <section id="form">
+            <form id="survey-form">  
+                <p class="form-group">
+                    <label id="name-label" class="form-label" for="name">Name</label>
+                    <input type="text" id="name" class="form-input" required="required" placeholder="Please enter your name" name="name"/>
+                </p>
+                <p class="form-group">
+                    <label id="email-label" class="form-label" for="email">Email</label>
+                    <input type="email" id="email" class="form-input"  required="required" placeholder="A valid email" name="email"/>
+                </p>
+                <p class="form-group">
+                    <label id="number-label" class="form-label" for="number">Age</label>
+                    <input type="number" id="number" class="form-input"  required="required" placeholder="Enter your age" name="age" min="18" max="150"/>
+                </p>    
+                <p class="form-group">
+                    <label for="dropdown" class="form-label question" >How you want to contribute in our group</label>
+                    <select id="dropdown"  class="form-input">
+                        <option>Just a fan</option>
+                        <option>As animal feeder</option>
+                        <option>As animal saver</option>
+                        <option>Economical contribution</option>
+                        <option>Other</option>                    
+                    </select>
+                </p>
+                <p class="form-group">
+                    <label for="availability" class="form-label question">How many hours you're available at week</label>
+                    <span id="availability" class="form-input">
+                        <label><input type="radio" value="1" name="hoursperweek"/>&lt;= 10 hours</label>
+                        <label><input type="radio" value="2" name="hoursperweek"/>10 - 20 hours</label>
+                        <label><input type="radio" value="3" name="hoursperweek"/>+20 hours</label>
+                    </span>
+                </p>
+                <p class="form-group">
+                    <label for="animalfeel" class="form-label question">What do you feel about animals</label>
+                    <span id="animalfeel" class="form-input">
+                        <label><input type="checkbox" name="feel" value="1"/>They are amazing</label>
+                        <label><input type="checkbox" name="feel" value="2"/>I love animals</label>
+                        <label><input type="checkbox" name="feel" value="3"/>Animals are an important part of the world</label>
+                        <label><input type="checkbox" name="feel" value="4"/>We cant leave good without animals</label>
+                    </span>
+                </p>
+                <p class="form-group">
+                    <label for="about" class="form-label question">Tell us more than for you</label>
+                    <span class="form-input">
+                        <textarea  id="about"></textarea>
+                    </span>
+                </p> 
+                <p id="button-container">
+                    <input id="clear" type="reset" value="Clear"/>
+                    <input id="submit" type="submit" value="Become a saver"/>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
