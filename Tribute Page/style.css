@@ -1,0 +1,164 @@
+body
+{
+    margin:0px;
+    padding:0px;
+    background-color: #F0EBD5; 
+}
+main
+{    
+    background-color:rgb(247, 240, 243);    
+    font-family: 'Exo', monospace;
+    margin:50px auto;    
+    max-width:800px;
+    padding:20px;        
+    align-items: center;
+         
+}
+a
+{
+    text-decoration: none;
+    color:#3F706A;
+}
+#header
+{
+     text-align: center;  
+     background: rgb(243, 243, 243);  
+     padding: 20px;
+     border-radius: 10px 10px 0px 0px;
+     border-bottom: 5px solid #71A39D;
+     border-top:15px solid #71A39D;
+     border-left: 1px solid #71A39D;
+     border-right: 1px solid #71A39D;
+     color:#635563;
+}
+h1
+{     
+    font-size:24pt;
+    margin-bottom:0px;
+}
+h2
+{
+    margin-top:0px;
+    color:#3F706A;
+    font-size:14pt;
+}
+#tribute-info
+{    
+    padding:5px;
+    border-radius:10px; 
+    text-align: justify;  
+}
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
+  }
+
+#clubs-header
+{
+    width:100%;
+    text-align:center;
+    padding: 10px;    
+}
+#clubs
+{
+    width:100%;
+    display:flex;
+    flex-direction:column;    
+}
+.club
+{
+    width:100%;
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;    
+}
+.clubnyear
+{
+    border:1px solid #98D6AB;
+    border-radius: 50%;
+    min-width:60px;
+    min-height: 60px;  
+    padding:15px;  
+    display: flex;            
+    flex-direction: column;
+    font-size:10pt;
+    background-color:#71A39D;    
+    text-align: center;
+    z-index:2;
+}
+.club-name
+{
+    width:100%;
+    color:rgb(166, 231, 224);
+    font-size:10pt;
+    margin: auto auto;  
+    flex-wrap:1;      
+}
+.club-year
+{    
+    width:100%;
+    color:#fff;
+    font-size:10pt;
+    font-weight:bold;
+    margin: auto auto;
+    flex-wrap:1;
+}
+.club-info
+{
+    border: 1px dashed #71A39D;
+    border-radius: 10px;
+    margin-left: -45px;    
+    padding: 20px 20px 20px 50px;
+    z-index:1;
+    color:#635563;
+    font-size:11pt;
+}
+.club-info h4
+{    
+    color:#71A39D; 
+    margin:0px;
+    display: none;
+}
+
+@media (max-width:400px) {
+    h1
+    {     
+        font-size:16pt;    
+    }
+    h2
+    {        
+        font-size:12pt;
+    }
+
+    #img-caption
+    {
+        font-size:10pt;
+    }
+    #tribute-info
+    {
+        font-size:10pt;
+    }
+    .clubnyear
+    {
+        display:none;
+    }
+    .club-info
+    {
+        font-size:10pt;
+        margin-left:0px;
+        padding: 20px 20px 20px 20px;
+    }
+    .club-info h4
+    {        
+        display: inherit;
+    }
+}
+
