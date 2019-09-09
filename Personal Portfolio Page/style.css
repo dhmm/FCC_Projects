@@ -1,0 +1,172 @@
+/*css variable*/
+:root
+{
+    --dark-orange : #B58C19;
+    --medium-yellow: #D1CF26;
+    --medium-blue: #186787;
+    --light-blue: #00B5DE;
+}
+body
+{
+    font-family: 'Livvic', sans-serif;
+    margin:0px;
+    padding:0px;
+}
+#navbar
+{
+    position: fixed;
+    min-width: 100%;
+    background-color: var(--dark-orange);      
+}
+#navbar ul
+{
+    margin:0px;
+    padding:0px;
+    display: flex;  
+    list-style: none;
+}
+#navar ul li 
+{
+    display: inline;
+}
+#navbar ul li a 
+{    
+    text-decoration:none;
+    color:#fff;        
+    display: block;
+    padding:20px 20px;;
+}
+#navbar ul li a:hover
+{
+    background: var(--medium-blue);
+    color:#fff;
+}
+#welcome-section
+{    
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 100vh;    
+    margin:0px;
+    padding:0px;
+    background: linear-gradient(180deg ,var(--medium-yellow) , var(--dark-orange));          
+}
+#welcome-section h1
+{    
+    align-self: center;
+    color:#fff;
+    font-size:4em;
+    margin-bottom: 0px;
+}
+#welcome-section p
+{
+    align-self:center;
+    color:#186787;
+    font-size:2em;
+}
+#profile-links
+{ 
+    align-self: center;
+}
+#profile-links a
+{
+    color:#fff;
+    text-decoration: none;    
+}
+#profile-links a:hover
+{
+    text-decoration: underline;
+}
+#projects
+{
+    display:flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10rem 2rem;     
+    background: linear-gradient(180deg ,var(--medium-blue) , var(--light-blue));    
+}
+.project-tile
+{
+    display: flex;
+    flex-direction:column;
+    background: #fff;
+    align-self: center;
+    border-radius:10px;
+    width:400px;
+    height:300px;
+    padding:20px;
+    margin:10px;    
+}
+.project-tile a
+{
+    margin-top:20px;
+    text-decoration: none;
+    align-self: center;
+    padding:10px;
+    background: var(--medium-blue);
+    color:#fff;
+    border-radius: 10px;
+}
+.project-tile a:hover
+{    
+    background: var(--dark-orange);
+}
+.project-tile img
+{
+    width:400px;
+    height:176px;
+}
+
+@media (max-width:600px)
+{
+    #welcome-section h1
+    {
+        font-size:3em;
+    }
+    #welcome-section p
+    {
+        font-size:1.2em;
+    }
+}
+@media (max-width:550px)
+{
+    #welcome-section h1
+    {
+        font-size:2em;
+    }
+    #welcome-section p
+    {
+        font-size:1.2em;
+    }
+    .project-tile
+    {
+        display: flex;
+        flex-direction:column;
+        background: #fff;
+        align-self: center;
+        border-radius:10px;
+        width:300px;
+        height:250px;
+        padding:20px;
+        margin:10px;    
+    }
+    .project-tile a
+    {
+        margin-top:20px;
+        text-decoration: none;
+        align-self: center;
+        padding:10px;
+        background: var(--medium-blue);
+        color:#fff;
+        border-radius: 10px;
+    }
+    .project-tile a:hover
+    {    
+        background: var(--dark-orange);
+    }
+    .project-tile img
+    {
+        width:300px;
+        height:132px;
+    }
+}
