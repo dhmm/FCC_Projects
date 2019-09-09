@@ -1,0 +1,116 @@
+body 
+{
+    font-family: 'Dosis', sans-serif;
+    margin: 0px;
+    padding:0px;    
+}
+#navbar
+{    
+    background: #E6DA8C;
+    position: fixed;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    width:300px;
+    height: 100%;   
+    box-shadow: 2px 0px 30px #8A7E30;  
+}
+#navbar ul
+{
+    margin:0px;
+    padding:0px;
+    list-style: none;   
+}
+#navbar ul li
+{
+    border-bottom: 1px dashed #D1732C;
+}
+#navbar li a
+{  
+    display:block;
+    padding:10px;
+    text-decoration:none;    
+    color:#333;
+}
+#navbar li a:hover {
+    animation-name: btn-animation;
+    animation-duration: 1s; 
+    animation-fill-mode: forwards;  
+}
+@keyframes btn-animation {
+    100% {                
+        color:#fff;        
+    }
+    100% {
+        background-color:#8A7E30;
+        color:#fff;        
+    }
+}
+
+#navbar header
+{
+    display:block;
+    background: #333;
+    padding:10px;
+    color:#ccc;
+}
+#main-doc
+{
+    background:#EBFBFA;
+    margin-left: 300px;
+    padding: 20px;
+    margin-top:0px;
+}
+.main-section header
+{    
+    color:#D1732C;
+    font-weight: bold;
+}
+.main-section
+{
+    color: #333;    
+}
+code
+{     
+    display: block;   
+    padding:30px 10px;
+    background:#F0DCB5;
+}
+.gototop 
+{
+    width: auto;
+    display: block;
+    margin: 20px 0px 40px 0px;
+}
+.gototop a
+{
+    text-decoration: none;
+    background:#4EB9C2;
+    color:#fff;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+.gototop a:hover
+{
+    background:#8A7E30;
+    color:#fff;
+}
+
+@media (max-width:800px) {
+    #navbar {        
+        position: inherit;
+        top:0px;
+        left:0px;
+        right:0px;        
+        width:auto;
+        height: 200px;
+        margin: 0px;
+        padding:0px;
+        overflow: scroll;
+    }
+    #main-doc {
+        margin:0px;                
+        padding:10px;                
+    }
+}
+
